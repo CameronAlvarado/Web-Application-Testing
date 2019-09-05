@@ -3,6 +3,15 @@ import Dashboard from "./components/Dashboard.js"
 import Display from "./components/Display.js"
 import './App.css';
 
+export function addStrike2 (strikeCount, setStrikeCount) {
+  if (strikeCount < 2) {
+    return strikeCount + 1
+    }
+    else if (strikeCount === 2) {
+      return setStrikeCount(strikeCount - 2)
+    }
+}
+
 function App() {
 
   const [ballCount, setBallCount] = useState(0);

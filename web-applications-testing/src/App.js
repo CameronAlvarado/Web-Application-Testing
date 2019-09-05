@@ -26,6 +26,16 @@ function App() {
     }
   }
 
+  function addFoul() {
+  if (strikeCount < 2) {
+    return setStrikeCount(strikeCount + 1)
+    }
+  }
+
+  function addHit() {
+    return (setStrikeCount(0) || setBallCount(0))
+  }
+
   return (
     <div className="App">
      <h1>BaseBall App</h1>
@@ -34,7 +44,9 @@ function App() {
       strikeCount={strikeCount} />
      <Dashboard
       addBall={addBall}
-      addStrike={addStrike} />
+      addStrike={addStrike}
+      addFoul={addFoul}
+      addHit={addHit} />
     </div>
   );
 }

@@ -1,5 +1,37 @@
 .App {
+  margin-top: 100px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.app-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px; 
+  background-color: black;
+  box-shadow: 0px 0px 10px grey;
+}
+
+p, h1, h2 {
+  color: white;
+  text-shadow: 0px 0px 7px grey;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  margin: 10px;
+  border: 1px solid dodgerblue;
+  box-shadow: 3px 3px 0px orangered;
+  font-size: 16px;
+  color: black;
+  text-shadow: 0px 0px 7px grey
+}
+
+.display {
+  background-color: orangered;
 }
 
 .App-logo {

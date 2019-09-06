@@ -4,7 +4,7 @@ import '../App.css';
 function Display(props) {
 
   return (
-    <div className="Display">
+    <div className="display">
      <p>Balls: {props.ballCount}</p>
      <p>Strikes: {props.strikeCount}</p>
     </div>

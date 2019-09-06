@@ -47,15 +47,17 @@ function App() {
 
   return (
     <div className="App">
-     <h1>BaseBall App</h1>
-     <Display
-      ballCount={ballCount}
-      strikeCount={strikeCount} />
-     <Dashboard
-      addBall={addBall}
-      addStrike={addStrike}
-      addFoul={addFoul}
-      addHit={addHit} />
+      <div className="app-box">
+        <h1>BaseBall App</h1>
+        <Display
+          ballCount={ballCount}
+          strikeCount={strikeCount} />
+        <Dashboard
+          addBall={addBall}
+          addStrike={addStrike}
+          addFoul={addFoul}
+          addHit={addHit} />
+      </div>
     </div>
   );
 }
